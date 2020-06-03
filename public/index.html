@@ -33,7 +33,11 @@
   </head>
 
   <body>
- 
+    <form name="Contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+    </form>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/96/three.min.js"></script>
     <script src="https://www.vantajs.com/dist/vanta.birds.min.js"></script>
