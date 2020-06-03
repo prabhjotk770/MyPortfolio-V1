@@ -7,7 +7,7 @@ const Navbar = () => {
       class="navbar navbar-expand-lg navbar-dark"
       style={{ backgroundColor: "#FF1F5A" }}
     >
-      <Link to="/" class="navbar-brand">
+      <Link exact to="/" class="navbar-brand">
         Home
       </Link>
 
@@ -30,12 +30,12 @@ const Navbar = () => {
             </Link>
           </li>
           <li class="nav-item">
-            <Link to="/project" class="nav-link text-light font-weight-bold">
+            <Link exact to="/project" class="nav-link text-light font-weight-bold">
               Projects
             </Link>
           </li>
           <li class="nav-item">
-            <Link to="/contact" class="nav-link text-light font-weight-bold">
+            <Link exact to="/contact" class="nav-link text-light font-weight-bold">
               Contact me
             </Link>
           </li>

@@ -1,6 +1,6 @@
 import React from "react";
-import calculator from "../../../assets/calc2.png";
-import Img1 from "../../../assets/plant.png";
+import calculator from "../../../assets/calc2.webp";
+import Img1 from "../../../assets/plant.webp";
 import { Link } from "react-router-dom";
 
 const Calc = () => {
@@ -36,14 +36,15 @@ const Calc = () => {
           <b style={{color:"#f3f169"}}>Click on the link below and get a glimpse of the application.</b>
           <br />
           
-          <a href="https://p413h.csb.app/" class="btn btn-primary btn-lg active" 
+          <a href="https://p413h.csb.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg active" 
           role="button" aria-pressed="true" style={{width:"60%"}}>My Calculator</a>
+          <br/>
         </div>
-        <Link to="/quiz">
+        <Link to="/project/quiz">
           <button
             type="button"
             className="button-three"
-            style={{backgroundColor: "#FF1F5A" , marginTop:"3em"  , width:"7em"}}
+            style={{backgroundColor: "#FF1F5A", position:"absolute", bottom:"2em", width:"7em"}}
           >
             Next
           </button>

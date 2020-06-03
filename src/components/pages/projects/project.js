@@ -7,6 +7,11 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 const Project = () => {
   return (
     <Router>
+       <Switch>
+        <Route exact path="/project/quiz">
+          <Friendship />
+        </Route>
+      </Switch>
       <Switch>
         <Route exact path="/project">
           <Clock />
@@ -14,16 +19,12 @@ const Project = () => {
       </Switch>
 
       <Switch>
-        <Route exact path="/calc">
+        <Route exact path="/project/calc">
           <Calc />
         </Route>
       </Switch>
 
-      <Switch>
-        <Route exact path="/quiz">
-          <Friendship />
-        </Route>
-      </Switch>
+     
     </Router>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
-import clock from "../../../assets/clock1.jpg";
-import Img1 from "../../../assets/plant.png";
+import clock from "../../../assets/clock1.webp";
+import Img1 from "../../../assets/plant.webp";
 import { Link } from "react-router-dom";
 const Clock = () => {
   return (
@@ -33,7 +33,7 @@ const Clock = () => {
           <b style={{color:"#f3f169"}}>Click on the link below and get a glimpse of the application.</b>
           <br />
           
-          <a href="https://csb-oiee3-pswz8zudv.now.sh/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" style={{width:"50%"}}>My Clock</a>
+          <a href="https://csb-oiee3-pswz8zudv.now.sh/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" style={{width:"50%"}}>My Clock</a>
 
 
 
@@ -41,11 +41,11 @@ const Clock = () => {
 
 
         </div>
-        <Link to="/calc">
+        <Link exact to="/project/calc">
           <button
             type="button"
             className="button-three"
-            style={{backgroundColor: "#FF1F5A" , marginTop:"5em"  , width:"7em"}}
+            style={{backgroundColor: "#FF1F5A" ,position:"absolute", bottom:"2em"  , width:"7em"}}
           >
             Next
           </button>

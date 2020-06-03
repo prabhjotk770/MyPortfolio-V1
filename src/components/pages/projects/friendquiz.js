@@ -1,6 +1,6 @@
 import React from "react";
-import friends from "../../../assets/friendsimg.png";
-import Img1 from "../../../assets/plant.png";
+import friends from "../../../assets/friendsimg.webp";
+import Img1 from "../../../assets/plant.webp";
 import { Link } from "react-router-dom";
 
 const Friendship = () => {
@@ -37,16 +37,16 @@ const Friendship = () => {
           <b style={{color:"#f3f169"}}>Click on the link below and get a glimpse of the application.</b>
           <br/>
           
-          <a href="https://p413h.csb.app/" class="btn btn-primary btn-lg active" 
+          <a href="https://friendshipquiz.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg active" 
           role="button" aria-pressed="true" style={{width:"60%"}}>Friendship Quiz</a>
          
        
         </div>
-        <Link to="/project">
+        <Link exact to="/project">
           <button
             type="button"
             className="button-three"
-            style={{backgroundColor: "#FF1F5A" , marginTop:"6em"  , width:"7em"}}
+            style={{backgroundColor: "#FF1F5A" , position:"absolute", bottom:"2em", width:"7em"}}
           >
             Next
           </button>

@@ -1,6 +1,6 @@
 import React from "react";
-import aboutimage from "../../assets/aboutimage.jpg";
-import Img1 from "../../assets/plant.png";
+import aboutimage from "../../assets/aboutimage.webp";
+import Img1 from "../../assets/plant.webp";
 import { Link } from "react-router-dom";
 
 const About = () => {
@@ -27,11 +27,11 @@ const About = () => {
       <br />
       <b>languages i am good at are:</b>
       
-      <i>C++, javascript, CSS, HTML, and java</i>
+      <i>C++, javascript, CSS, HTML, and java</i><br/>
       
-     <b> Libraries and Frameworks i have used are:</b>
+     <b> Libraries and Frameworks i have used are:</b><br/>
       
-     <i>Bootstrap, Material UI, Express and React</i> 
+     <i>Bootstrap, Material UI, Express and React</i> <br/>
      
       I prefer to keep learning and continue challanging myself.
       <br />
