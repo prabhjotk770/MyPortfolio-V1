@@ -24,7 +24,7 @@ function NetflixClone() {
               </b>
               <div className="project_btn">
                 <a
-                  href="https://clone-8bee1.web.app"
+                  href="https://prabhjotkaur-netflix-clone.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="btn btn-primary btn-lg active"
