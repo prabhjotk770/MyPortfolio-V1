@@ -1,11 +1,11 @@
 import React from "react";
 import "./Project.css";
 
-import friendship from "../../../assets/friendship.webp";
+import netflix_sc from "../../../assets/netflix.webp";
 
 import { Link } from "react-router-dom";
 
-const Friendship = () => {
+function Netflix_Clone() {
   return (
     <div className="container">
       <div className="project">
@@ -13,9 +13,10 @@ const Friendship = () => {
           <div className="project_desc">
             <div className="project_content">
               <p className="project_para">
-                It is a fun application you can use to know how well your
-                friends know you. Javascript, CSS, HTML languages are used to
-                build this app in Reactjs and Nodejs.
+                It's a Netflix Clone app. Few amazon originals web series
+                trailer can be played as well. Javascript, CSS, HTML languages
+                are used to build this app in Reactjs. Firebase is used for the
+                login component.
               </p>
 
               <b style={{ color: "#1e2a78" }}>
@@ -23,7 +24,7 @@ const Friendship = () => {
               </b>
               <div className="project_btn">
                 <a
-                  href="https://friendshipquiz.netlify.app/quiz"
+                  href="https://clone-8bee1.web.app"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="btn btn-primary btn-lg active"
@@ -31,12 +32,12 @@ const Friendship = () => {
                   aria-pressed="true"
                   style={{ width: "80%" }}
                 >
-                  Friendship Quiz
+                  Netflix Clone
                 </a>
               </div>
             </div>
             <div className="project_nextbtn">
-              <Link to="/project/">
+              <Link to="/project/amazon">
                 <button
                   type="button"
                   className="button-three"
@@ -48,10 +49,11 @@ const Friendship = () => {
             </div>
           </div>
         </div>
+
         <div className="project_screenshot">
           <img
             className="screenshot_image"
-            src={friendship}
+            src={netflix_sc}
             alt=""
             style={{ height: "300px", width: "auto" }}
           />
@@ -59,5 +61,6 @@ const Friendship = () => {
       </div>
     </div>
   );
-};
-export default Friendship;
+}
+
+export default Netflix_Clone;

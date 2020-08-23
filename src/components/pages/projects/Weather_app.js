@@ -1,11 +1,10 @@
 import React from "react";
-import "./Project.css";
-
-import friendship from "../../../assets/friendship.webp";
 
 import { Link } from "react-router-dom";
+import winter from "../../../assets/winter.webp";
+import "./Project.css";
 
-const Friendship = () => {
+const Weather_app = () => {
   return (
     <div className="container">
       <div className="project">
@@ -13,9 +12,9 @@ const Friendship = () => {
           <div className="project_desc">
             <div className="project_content">
               <p className="project_para">
-                It is a fun application you can use to know how well your
-                friends know you. Javascript, CSS, HTML languages are used to
-                build this app in Reactjs and Nodejs.
+                It's a Weather forecast app. It provides accurate weather
+                conditions with the climate description. Javascript, CSS, HTML
+                languages are used to build this app in Reactjs.
               </p>
 
               <b style={{ color: "#1e2a78" }}>
@@ -23,7 +22,7 @@ const Friendship = () => {
               </b>
               <div className="project_btn">
                 <a
-                  href="https://friendshipquiz.netlify.app/quiz"
+                  href="https://prabhjotweatherapp.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="btn btn-primary btn-lg active"
@@ -31,12 +30,12 @@ const Friendship = () => {
                   aria-pressed="true"
                   style={{ width: "80%" }}
                 >
-                  Friendship Quiz
+                  Weather App
                 </a>
               </div>
             </div>
             <div className="project_nextbtn">
-              <Link to="/project/">
+              <Link to="/project/quiz">
                 <button
                   type="button"
                   className="button-three"
@@ -51,13 +50,13 @@ const Friendship = () => {
         <div className="project_screenshot">
           <img
             className="screenshot_image"
-            src={friendship}
+            src={winter}
             alt=""
-            style={{ height: "300px", width: "auto" }}
+            style={{ height: "300px", width: "350px" }}
           />
         </div>
       </div>
     </div>
   );
 };
-export default Friendship;
+export default Weather_app;

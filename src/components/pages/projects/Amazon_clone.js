@@ -1,11 +1,11 @@
 import React from "react";
 import "./Project.css";
 
-import friendship from "../../../assets/friendship.webp";
+import amazon_sc1 from "../../../assets/amazon.webp";
 
 import { Link } from "react-router-dom";
 
-const Friendship = () => {
+function Amazon_clone() {
   return (
     <div className="container">
       <div className="project">
@@ -13,9 +13,9 @@ const Friendship = () => {
           <div className="project_desc">
             <div className="project_content">
               <p className="project_para">
-                It is a fun application you can use to know how well your
-                friends know you. Javascript, CSS, HTML languages are used to
-                build this app in Reactjs and Nodejs.
+                it's an Amazon clone web app. sign in, sign up features are also
+                included. Javascript, CSS, HTML languages are used to build this
+                app in Reactjs. Firebase is used for the login component.
               </p>
 
               <b style={{ color: "#1e2a78" }}>
@@ -23,7 +23,7 @@ const Friendship = () => {
               </b>
               <div className="project_btn">
                 <a
-                  href="https://friendshipquiz.netlify.app/quiz"
+                  href="https://clone-d244d.web.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="btn btn-primary btn-lg active"
@@ -31,12 +31,12 @@ const Friendship = () => {
                   aria-pressed="true"
                   style={{ width: "80%" }}
                 >
-                  Friendship Quiz
+                  Amazon Clone
                 </a>
               </div>
             </div>
             <div className="project_nextbtn">
-              <Link to="/project/">
+              <Link to="/project/weather">
                 <button
                   type="button"
                   className="button-three"
@@ -48,16 +48,18 @@ const Friendship = () => {
             </div>
           </div>
         </div>
+
         <div className="project_screenshot">
           <img
             className="screenshot_image"
-            src={friendship}
+            src={amazon_sc1}
             alt=""
-            style={{ height: "300px", width: "auto" }}
+            style={{ height: "330px", width: "auto" }}
           />
         </div>
       </div>
     </div>
   );
-};
-export default Friendship;
+}
+
+export default Amazon_clone;

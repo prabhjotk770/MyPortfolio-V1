@@ -25,15 +25,15 @@ const About = () => {
       <br />
       Following are my skills: 😍😍
       <br />
-      <b>languages i am good at are:</b>
+      <b>Languages i am good at: </b>
       
       <i>C++, javascript, CSS, HTML, and java</i><br/>
       
-     <b> Libraries and Frameworks i have used are:</b><br/>
+     <b> Libraries and Frameworks i have used:</b><br/>
       
      <i>Bootstrap, Material UI, Express and React</i> <br/>
      
-      I prefer to keep learning and continue challanging myself.
+     <strong> I prefer to keep learning and continue challanging myself.</strong>
       <br />
       <div >
       <h3>feel free to have a look at my latest projects. <svg class="bi bi-emoji-sunglasses" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">

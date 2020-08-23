@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+
+  padding: 1rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer_copyright {
+  color: white;
+  margin-right: 10px;
+}
+
+.footer_link {
+  color: green;
+}
