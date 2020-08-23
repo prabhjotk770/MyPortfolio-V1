@@ -5,7 +5,7 @@ import netflix_sc from "../../../assets/netflix.webp";
 
 import { Link } from "react-router-dom";
 
-function Netflix_Clone() {
+function NetflixClone() {
   return (
     <div className="container">
       <div className="project">
@@ -63,4 +63,4 @@ function Netflix_Clone() {
   );
 }
 
-export default Netflix_Clone;
+export default NetflixClone;

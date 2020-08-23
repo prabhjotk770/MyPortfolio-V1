@@ -1,10 +1,11 @@
 import React from "react";
-
-import { Link } from "react-router-dom";
-import winter from "../../../assets/winter.webp";
 import "./Project.css";
 
-const Weather_app = () => {
+import amazon_sc1 from "../../../assets/amazon.webp";
+
+import { Link } from "react-router-dom";
+
+function AmazonClone() {
   return (
     <div className="container">
       <div className="project">
@@ -12,9 +13,9 @@ const Weather_app = () => {
           <div className="project_desc">
             <div className="project_content">
               <p className="project_para">
-                It's a Weather forecast app. It provides accurate weather
-                conditions with the climate description. Javascript, CSS, HTML
-                languages are used to build this app in Reactjs.
+                it's an Amazon clone web app. sign in, sign up features are also
+                included. Javascript, CSS, HTML languages are used to build this
+                app in Reactjs. Firebase is used for the login component.
               </p>
 
               <b style={{ color: "#1e2a78" }}>
@@ -22,7 +23,7 @@ const Weather_app = () => {
               </b>
               <div className="project_btn">
                 <a
-                  href="https://prabhjotweatherapp.netlify.app/"
+                  href="https://clone-d244d.web.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="btn btn-primary btn-lg active"
@@ -30,12 +31,12 @@ const Weather_app = () => {
                   aria-pressed="true"
                   style={{ width: "80%" }}
                 >
-                  Weather App
+                  Amazon Clone
                 </a>
               </div>
             </div>
             <div className="project_nextbtn">
-              <Link to="/project/quiz">
+              <Link to="/project/weather">
                 <button
                   type="button"
                   className="button-three"
@@ -47,16 +48,18 @@ const Weather_app = () => {
             </div>
           </div>
         </div>
+
         <div className="project_screenshot">
           <img
             className="screenshot_image"
-            src={winter}
+            src={amazon_sc1}
             alt=""
-            style={{ height: "300px", width: "350px" }}
+            style={{ height: "330px", width: "auto" }}
           />
         </div>
       </div>
     </div>
   );
-};
-export default Weather_app;
+}
+
+export default AmazonClone;

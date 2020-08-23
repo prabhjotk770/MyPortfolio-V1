@@ -1,28 +1,28 @@
 import React from "react";
 import Friendship from "./friendquiz";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Amazon_clone from "./Amazon_clone";
-import Weather_app from "./Weather_app";
-import Netflix_Clone from "./Netflix_Clone";
+import AmazonClone from "./AmazonClone";
+import WeatherApp from "./WeatherApp";
+import NetflixClone from "./NetflixClone";
 
 const Project = () => {
   return (
     <Router>
       <Switch>
         <Route exact path="/project">
-          <Netflix_Clone />
+          <NetflixClone />
         </Route>
       </Switch>
 
       <Switch>
         <Route exact path="/project/amazon">
-          <Amazon_clone />
+          <AmazonClone />
         </Route>
       </Switch>
 
       <Switch>
         <Route exact path="/project/weather">
-          <Weather_app />
+          <WeatherApp />
         </Route>
       </Switch>
 
