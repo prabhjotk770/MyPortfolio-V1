@@ -1,7 +1,7 @@
 import React from "react";
 import "./Project.css";
 
-import amazon_sc1 from "../../../assets/amazon.webp";
+import amazon_sc1 from "../../../assets/amazon.png";
 
 import { Link } from "react-router-dom";
 

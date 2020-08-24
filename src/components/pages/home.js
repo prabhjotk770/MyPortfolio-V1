@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import Img from "../../assets/mydp.webp";
+import Img from "../../assets/home.png";
 import { Link } from "react-router-dom";
 import BIRDS from "vanta/dist/vanta.birds.min";
 

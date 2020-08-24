@@ -1,7 +1,7 @@
 import React from "react";
 import "./Project.css";
 
-import friendship from "../../../assets/friendship.webp";
+import friendship from "../../../assets/friendship.png";
 
 import { Link } from "react-router-dom";
 

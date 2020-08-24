@@ -1,7 +1,7 @@
 import React from "react";
 import "./Project.css";
 
-import netflix_sc from "../../../assets/netflix.webp";
+import netflix_sc from "../../../assets/netflix.png";
 
 import { Link } from "react-router-dom";
 

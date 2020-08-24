@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-import winter from "../../../assets/winter.webp";
+import winter from "../../../assets/winter.png";
 import "./Project.css";
 
 const WeatherApp = () => {
