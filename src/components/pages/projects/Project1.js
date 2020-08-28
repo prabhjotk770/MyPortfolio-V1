@@ -18,7 +18,7 @@ function Project1() {
             <ProjectDesc
               image={netflix_img}
               language="ReactJs, Javascript, CSS, HTML"
-              desc="It's a demo Netflix web app. Few amazon originals web series
+              desc="It's a demo Netflix web app. Few Netflix originals web series
               trailer can be played as well."
               title="Netflix Clone"
               siteLink="https://prabhjotkaur-netflix-clone.netlify.app/"
