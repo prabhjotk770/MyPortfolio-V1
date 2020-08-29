@@ -31,7 +31,7 @@ function Project1() {
               desc="It's a demo amazon web app. sign in, sign up features are also
               included."
               title="Amazon Clone"
-              siteLink="https://clone-d244d.web.app/"
+              siteLink="https://prabhjotkaur-ecommerce-clone.netlify.app/"
             />
           </div>
         </div>
