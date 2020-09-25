@@ -30,12 +30,12 @@ const About = () => {
             <br />
             Following are my skills: 😍😍
             <br />
-            <b>Languages i am good at: </b>
-            <i>C++, javascript, CSS, HTML, and java</i>
+            <b>Languages I am good at: </b>
+            <i>C++, javascript, CSS, HTML</i>
             <br />
-            <b> Libraries and Frameworks i have used:</b>
+            <b> Libraries and Frameworks I have used:</b>
             <br />
-            <i>Bootstrap, Material UI, Express and React</i> <br />
+            <i>Bootstrap, Material UI, Express, Nodejs and React</i> <br />
             <strong>
               {" "}
               I prefer to keep learning and continue challanging myself.

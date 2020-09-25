@@ -18,7 +18,7 @@ function Project1() {
             <ProjectDesc
               image={netflix_img}
               language="ReactJs, Javascript, CSS, HTML"
-              desc="It's a demo Netflix web app. Few Netflix originals web series
+              desc="It's a demo Netflix web app. Netflix's original web series
               trailer can be played as well."
               title="Netflix Clone"
               siteLink="https://prabhjotkaur-netflix-clone.netlify.app/"
@@ -28,8 +28,7 @@ function Project1() {
             <ProjectDesc
               image={amazon_img}
               language="ReactJs, Javascript, Firebase, React Context API, CSS, HTML"
-              desc="It's a demo amazon web app. sign in, sign up features are also
-              included."
+              desc="It's a demo Amazon web app. User authorization and add to cart features integrated."
               title="Amazon Clone"
               siteLink="https://prabhjotkaur-ecommerce-clone.netlify.app/"
             />
@@ -41,7 +40,7 @@ function Project1() {
               image={weather_img}
               language="ReactJs, Javascript, CSS, HTML"
               desc="It provides accurate weather
-              conditions with the climate description."
+              conditions of different places in the world."
               title="Weather Forecast App"
               siteLink="https://prabhjotweatherapp.netlify.app/"
             />
@@ -51,7 +50,7 @@ function Project1() {
               image={friendship_img}
               language="ReactJs, Javascript, MongoDB, NodeJs, CSS, HTML"
               desc="It's a fun application you can use to know how well your
-              friends know you."
+              friends really know you."
               title="Friendship Quiz"
               siteLink="https://friendshipquiz.netlify.app/quiz"
             />

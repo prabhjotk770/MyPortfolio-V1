@@ -54,7 +54,7 @@ const Home = () => {
                   </Link>
 
                   <a
-                    href="https://drive.google.com/file/d/1b8pDyWEMWtxaya5PXvUaLZpEhxpx7Hvx/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1UdxkKUEjdWHRnyACIVGbGytrxNGkB7ms/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
