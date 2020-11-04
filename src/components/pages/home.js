@@ -6,6 +6,8 @@ import BIRDS from "vanta/dist/vanta.birds.min";
 const Home = () => {
   const [vantaEffect, setVantaEffect] = useState(0);
   const myRef = useRef(null);
+
+
   useEffect(() => {
     if (!vantaEffect) {
       setVantaEffect(
@@ -18,6 +20,8 @@ const Home = () => {
       if (vantaEffect) vantaEffect.destroy();
     };
   }, [vantaEffect]);
+
+  
   return (
     <div style={{ width: "100%", height: "100%" }} ref={myRef}>
       <div className="container homewrapper">

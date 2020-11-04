@@ -5,6 +5,7 @@ import netflix_img from "../../../assets/netflix_bg.png";
 import amazon_img from "../../../assets/amazon_bg.png";
 import weather_img from "../../../assets/weather_bg.png";
 import friendship_img from "../../../assets/friendship_bg.png";
+import Calendar_img from "../../../assets/calendar.png";
 
 function Project1() {
   return (
@@ -14,6 +15,16 @@ function Project1() {
       </div>
       <div className="project_column">
         <div className="project_row">
+        <div className="project_box">
+            <ProjectDesc
+              image={Calendar_img}
+              language="ReactJs, Javascript, Node, Google Calendar API, CSS, HTML"
+              desc="A simple web app to display your upcoming google calendar events"
+              title="Calendar Events"
+              siteLink="https://calendar-events-app.netlify.app/"
+            />
+          </div>
+       
           <div className="project_box">
             <ProjectDesc
               image={netflix_img}
