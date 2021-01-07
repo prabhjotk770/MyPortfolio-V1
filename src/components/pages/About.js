@@ -4,7 +4,7 @@ import { Fade } from 'react-reveal';
 import { MDBRow, MDBCol } from 'mdbreact';
 
 import './About.css';
-import About_icon from './AboutIcon';
+import AboutIcon from './AboutIcon';
 const About = () => {
 	const [skills] = useState([
 		{
@@ -80,7 +80,7 @@ const About = () => {
 				<div className="icon_col" style={{ alignItems: 'center' }}>
 					<div className="icon_row">
 						<div className="icon_box">
-							<About_icon icon={skills} title="SKILLS" />
+							<AboutIcon icon={skills} title="SKILLS" />
 						</div>
 					</div>
 				</div>
@@ -89,7 +89,7 @@ const About = () => {
 				<div className="icon_col" style={{ alignItems: 'center' }}>
 					<div className="icon_row">
 						<div className="icon_box">
-							<About_icon icon={tools} title="TOOLS" />
+							<AboutIcon icon={tools} title="TOOLS" />
 						</div>
 					</div>
 				</div>

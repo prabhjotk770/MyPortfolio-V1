@@ -2,7 +2,7 @@ import React from 'react';
 import { Fade } from 'react-reveal';
 
 import './About.css';
-const About_icon = (props) => {
+const AboutIcon = (props) => {
 	return (
 		<div>
 			<Fade left>
@@ -17,4 +17,4 @@ const About_icon = (props) => {
 	);
 };
 
-export default About_icon;
+export default AboutIcon;
