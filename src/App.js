@@ -1,47 +1,36 @@
-import React from "react";
-import Navbar from "./components/layout/navbar";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "./components/pages/home";
-import Project from "./components/pages/projects/project";
-import Contact from "./components/pages/contact";
-import Footer from "./components/layout/footer";
-import About from "./components/pages/About";
+import React from 'react';
+import Navbar from './components/layout/navbar';
 
+import Home from './components/pages/home';
+import Project from './components/pages/projects/Project1';
+import Contact from './components/pages/contact';
+import Footer from './components/layout/footer';
+import About from './components/pages/About';
+import { Element } from 'react-scroll';
 
 const App = () => {
-  
- 
-  return (
-    <Router>
-      <Navbar />
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-      </Switch>
+	return (
+		<div>
+			<Navbar />
+			<Element name="home">
+				<Home />
+			</Element>
 
-      <Switch>
-        <Route path="/about">
-          <About />
-        </Route>
-      </Switch>
+			<Element name="about">
+				<About />
+			</Element>
 
-      <Switch>
-        <Route path="/project">
-          <Project />
-        </Route>
-      </Switch>
+			<Element name="projects">
+				<Project />
+			</Element>
 
-      <Switch>
-        <Route path="/contact">
-          <Contact />
-        </Route>
-      </Switch>
+			<Element name="contact">
+				<Contact />
+			</Element>
 
-      <Footer/>
-    
-    </Router>
-  );
+			<Footer />
+		</div>
+	);
 };
 
 export default App;

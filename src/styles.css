@@ -1,114 +1,246 @@
 .App {
-  font-family: sans-serif;
-  text-align: center;
+	font-family: sans-serif;
+	text-align: center;
 }
 
+/* HOME */
+
 .imagewrapper {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 2;
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 2;
 }
 
 .homewrapper {
-  display: flex;
-  margin: 0;
-  height: 40em;
-  width: 100%;
-  flex-wrap: wrap;
+	display: flex;
+	margin: 0;
+	height: 40em;
+	width: 100%;
+	flex-wrap: wrap;
 }
 
 .imagehome {
-  height: 12em;
-  position: absolute;
-  margin-left: 20em;
-  z-index: 3;
+	height: 12em;
+	position: absolute;
+	margin-left: 28em;
+	z-index: 3;
 }
 
 .homeContentContainer {
-  height: 20em;
-  padding: 2em;
-  width: 100%;
-  background-color: #7c203a;
+	height: 20em;
+	padding: 2em;
+	width: 100%;
+	background-color: #7c203a;
+	position: relative;
 }
 
 .hometitle {
-  margin-left: 8em;
-  margin-top: 3em;
+	margin-left: 12em;
+	margin-top: 3em;
+}
+.title_h1 {
+	flex-wrap: wrap;
+	position: absolute;
+	margin-left: 7em;
 }
 .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .aboutwrapper {
-  padding: 4em;
+	padding: 4em;
 }
 
 .aboutimage {
-  width: auto;
-  height: 25em;
-  margin-right: 0;
+	width: auto;
+	height: 25em;
+	margin-right: 0;
 }
 
 .button-three {
-  z-index: 999;
-  background-color: #ff1f5a;
-  border: none;
-  padding: 0.7em;
-  text-align: center;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-  text-decoration: none;
-  overflow: hidden;
+	z-index: 999;
+	background-color: #ff1f5a;
+	border: none;
+	padding: 0.7em;
+	text-align: center;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	text-decoration: none;
+	overflow: hidden;
 }
 
 .button-three:hover {
-  background: #fc5c9c;
-  box-shadow: 0px 2px 10px 5px #fcefee;
-  color: white;
+	background: #fc5c9c;
+	box-shadow: 0px 2px 10px 5px #fcefee;
+	color: white;
+}
+
+.moreAbout {
+	position: relative;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	font-size: 1em;
+	letter-spacing: 4px;
+	overflow: hidden;
+	background: linear-gradient(90deg, #000, #fff, #000);
+	background-repeat: no-repeat;
+	background-size: 80%;
+	animation: animate 8s linear infinite;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+h1 {
+	background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/6963bbf342d87b3a2150bd8f59682b89.jpg);
+	-webkit-background-clip: text;
+	background-size: contain;
+	width: 100%;
+	text-align: center;
+	color: transparent;
+
+	transform: translate(-50%, -50%);
+	position: absolute;
+	font-size: 1.5em;
+
+	font-family: 'frozen', serif;
+	font-weight: 700;
+	margin-left: 10.5rem;
+}
+
+h1 ::before {
+	content: attr(data-heading);
+	position: absolute;
+	margin-bottom: 4rem;
+	width: 100%;
+	background: linear-gradient(
+		45deg,
+		rgba(255, 255, 255, 0) 45%,
+		rgba(255, 255, 255, 0.8) 50%,
+		rgba(255, 255, 255, 0) 55%,
+		rgba(255, 255, 255, 0) 100%
+	);
+	-webkit-background-clip: text;
+	color: transparent;
+	mix-blend-mode: screen;
+	animation: shine 8s infinite;
+	background-size: 200%;
+	text-shadow: 2px 2px 10px rgba(#000, 0.2), -2px 2px 10px rgba(#000, 0.2), -2px -2px 10px rgba(#000, 0.2);
+}
+
+h6 {
+	display: inline-block;
+	color: white;
+	font-family: 'Righteous', serif;
+	font-size: 1em;
+	text-shadow: 0.03em 0.03em 0 hsla(230, 40%, 50%, 1);
+	margin-top: 1rem;
+}
+h6::after {
+	content: attr(data-shadow);
+
+	top: 0.06em;
+	left: 0.06em;
+	z-index: -1;
+	text-shadow: none;
+	background-image: linear-gradient(
+		45deg,
+		transparent 45%,
+		hsla(48, 20%, 90%, 1) 45%,
+		hsla(48, 20%, 90%, 1) 55%,
+		transparent 0
+	);
+	background-size: 0.05em 0.05em;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+	animation: shad-anim 15s linear infinite;
+}
+@font-face {
+	font-family: 'frozen';
+	src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/Ice%20kingdom%20-%20Bold%20-%20Por%20Kustren.woff');
+}
+@keyframes animate {
+	0% {
+		background-position: -500%;
+	}
+	100% {
+		background-position: 500%;
+	}
+}
+
+@keyframes shine {
+	0% {
+		background-position: -100%;
+	}
+	100% {
+		background-position: 100%;
+	}
+}
+
+@keyframes shad-anim {
+	0% {
+		background-position: 0 0;
+	}
+	0% {
+		background-position: 100% -100%;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.imagehome {
+		height: 12em;
+		position: absolute;
+		margin-left: -30em;
+		margin-top: 40em;
+		z-index: 3;
+	}
 }
 
 @media only screen and (max-width: 600px) {
-  .aboutimage {
-    width: 100%;
-    height: 20em;
-    margin-top: 3em;
-  }
+	.aboutimage {
+		width: 100%;
+		height: 20em;
+		margin-top: 3em;
+	}
+	.title_h1 {
+		margin-left: 5em;
+	}
 
-  .homeContentContainer {
-    height: 28em;
-    padding: 0;
-    margin: 1.2em;
-  }
+	.homeContentContainer {
+		height: 28em;
+		padding: 0;
+		margin: 1.2em;
+	}
 
-  .aboutpl {
-    display: none;
-  }
+	.aboutpl {
+		display: none;
+	}
 
-  .aboutwrapper {
-    padding: 2em;
-  }
+	.aboutwrapper {
+		padding: 2em;
+	}
 
-  .content-wrapper {
-    margin-top: 8em;
-  }
-  .titletext {
-    font-size: xx-large;
-  }
-  .imagehome {
-    position: absolute;
-    margin-top: 12em;
-    height: 10em;
+	.content-wrapper {
+		margin-top: 8em;
+	}
+	.titletext {
+		font-size: xx-large;
+		font-weight: 900;
+	}
+	.imagehome {
+		position: absolute;
+		margin-top: 12em;
+		height: 10em;
 
-    margin-left: 0;
-    z-index: 2;
-  }
-  .hometitle {
-    margin-left: 0;
-    padding: 2em;
-  }
+		margin-left: 0;
+		z-index: 2;
+	}
+	.hometitle {
+		margin-left: 0;
+		padding: 2em;
+	}
 }

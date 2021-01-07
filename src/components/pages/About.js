@@ -1,101 +1,101 @@
-import React from "react";
-import aboutimage from "../../assets/about.png";
-import Img1 from "../../assets/plant.png";
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { Fade } from 'react-reveal';
 
+import { MDBRow, MDBCol } from 'mdbreact';
+
+import './About.css';
+import About_icon from './AboutIcon';
 const About = () => {
-  return (
-    <div class="container aboutwrapper">
-      <div class="row" style={{ display: "flex" }}>
-        <div class="col-sm" style={{ fontfamily: "Lucida Console" }}>
-          <h2> About Prabhjot</h2>
-          <svg
-            class="bi bi-arrow-right-square-fill"
-            width="3em"
-            height="3em"
-            viewBox="0 0 16 16"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm5.646 10.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L9.793 7.5H5a.5.5 0 0 0 0 1h4.793l-2.147 2.146z"
-            />
-          </svg>
-        </div>
+	const [skills] = useState([
+		{
+			url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png',
+			name: 'React',
+		},
+		{
+			url: 'https://www.vhv.rs/dpng/d/313-3133777_javascript-transparent-background-svg-hd-png-download.png',
+			name: 'Javascript',
+		},
+		{ url: 'https://assets.stickpng.com/thumbs/5847f5bdcef1014c0b5e489c.png', name: 'HTML5' },
+		{ url: 'https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png', name: 'CSS' },
+		{ url: 'https://cdn.iconscout.com/icon/free/png-512/redux-283024.png', name: 'Redux' },
+		{ url: 'https://cdn.freebiesupply.com/logos/thumbs/2x/nodejs-1-logo.png', name: 'NodeJS' },
+		{ url: 'https://img.icons8.com/ios/452/sql.png', name: 'SQL' },
+		{
+			url:
+				'https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/306px-ISO_C%2B%2B_Logo.svg.png',
+			name: 'C++',
+		},
+	]);
 
-        <div class="col-sm" style={{ display: "flex" }}>
-          <div>
-            I like to code and develop web applications.
-            <br />
-            Following are my skills: 😍😍
-            <br />
-            <b>Languages I am good at: </b>
-            <i>C++, javascript, CSS, HTML</i>
-            <br />
-            <b> Libraries and Frameworks I have used:</b>
-            <br />
-            <i>Bootstrap, Material UI, Express, Nodejs and React</i> <br />
-            <strong>
-              {" "}
-              I prefer to keep learning and continue challanging myself.
-            </strong>
-            <br />
-            <div>
-              <h3>
-                feel free to have a look at my latest projects.{" "}
-                <svg
-                  class="bi bi-emoji-sunglasses"
-                  width="1em"
-                  height="1em"
-                  viewBox="0 0 16 16"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
-                  />
-                  <path
-                    fill-rule="evenodd"
-                    d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM6.5 6.497V6.5h-1c0-.568.447-.947.862-1.154C6.807 5.123 7.387 5 8 5s1.193.123 1.638.346c.415.207.862.586.862 1.154h-1v-.003l-.003-.01a.213.213 0 0 0-.036-.053.86.86 0 0 0-.27-.194C8.91 6.1 8.49 6 8 6c-.491 0-.912.1-1.19.24a.86.86 0 0 0-.271.194.213.213 0 0 0-.036.054l-.003.01z"
-                  />
-                  <path d="M2.31 5.243A1 1 0 0 1 3.28 4H6a1 1 0 0 1 1 1v1a2 2 0 0 1-2 2h-.438a2 2 0 0 1-1.94-1.515L2.31 5.243zM9 5a1 1 0 0 1 1-1h2.72a1 1 0 0 1 .97 1.243l-.311 1.242A2 2 0 0 1 11.439 8H11a2 2 0 0 1-2-2V5z" />
-                </svg>
-              </h3>
-              <br />
-              <Link to="/project">
-                <button type="button" className="button-three">
-                  Click Me :)
-                </button>
-              </Link>
-            </div>
-          </div>
-        </div>
+	const [tools] = useState([
+		{
+			url:
+				'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1024px-Visual_Studio_Code_1.35_icon.svg.png',
+			name: 'VScode',
+		},
+		{ url: 'https://image.flaticon.com/icons/png/512/25/25231.png', name: 'Github' },
+		{ url: 'https://img.icons8.com/color/452/npm.png', name: 'NPM' },
+		{ url: 'https://i.stack.imgur.com/dMXbE.png', name: 'Bootstrap' },
+		{ url: 'https://material-ui.com/static/logo.png', name: 'Material UI' },
+		{ url: 'https://firebase.google.com/downloads/brand-guidelines/PNG/logo-vertical.png', name: 'Firebase' },
+		{
+			url: 'https://nakedsecurity.sophos.com/wp-content/uploads/sites/2/2017/01/mongodb.png?w=775',
+			name: 'MongoDB',
+		},
+		{ url: 'https://cdn.iconscout.com/icon/free/png-256/express-9-1175170.png', name: 'Express' },
+	]);
+	return (
+		<div>
+			<MDBRow className="about">
+				<MDBCol>
+					<Fade>
+						<div className="about_desc">
+							<h2>ABOUT</h2>
+							<hr style={{ backgroundColor: '#e91e63', height: '4px', width: '70px' }} />
+							<div className="desc">
+								<p style={{ textAlign: 'center' }}>
+									I am a full stack developer from India. I design and code beautifully simple things,
+									and I love new technologies. I have a passion for making creative and dynamic user
+									interfaces. I prefer to keep learning and continue challenging myself.
+								</p>
+							</div>
+						</div>
+					</Fade>
+				</MDBCol>
+				<MDBCol>
+					<Fade>
+						<div className="about_desc">
+							<img
+								src="https://cdn.nohat.cc/thumb/f/720/comvecteezy227854.jpg"
+								class="card"
+								alt="aboutimage"
+								className="aboutimage"
+							/>
+						</div>
+					</Fade>
+				</MDBCol>
+			</MDBRow>
 
-        <div class="col-sm" style={{ display: "flex" }}>
-          <img
-            src={aboutimage}
-            class="card"
-            alt="aboutimage"
-            className="aboutimage"
-          />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm">
-          <div class="aboutpl">
-            <img
-              src={Img1}
-              alt=".."
-              style={{
-                display: "flex",
-              }}
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+			<Fade left>
+				<div className="icon_col" style={{ alignItems: 'center' }}>
+					<div className="icon_row">
+						<div className="icon_box">
+							<About_icon icon={skills} title="SKILLS" />
+						</div>
+					</div>
+				</div>
+			</Fade>
+			<Fade right>
+				<div className="icon_col" style={{ alignItems: 'center' }}>
+					<div className="icon_row">
+						<div className="icon_box">
+							<About_icon icon={tools} title="TOOLS" />
+						</div>
+					</div>
+				</div>
+			</Fade>
+		</div>
+	);
 };
+
 export default About;
