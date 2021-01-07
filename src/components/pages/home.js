@@ -13,7 +13,7 @@ const Home = () => {
 		});
 	};
 	return (
-		<div style={{ width: '100%', height: '100%', marginTop: '50px' }}>
+		<div style={{ width: '100%', height: '100%' }}>
 			<div className="container homewrapper">
 				<div className="imagewrapper">
 					<img src={Img} class="card" alt=".." className="imagehome" />
