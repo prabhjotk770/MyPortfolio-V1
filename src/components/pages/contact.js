@@ -110,7 +110,10 @@ const Contact = () => {
 				<MDBCol>
 					<Fade right>
 						<div>
-							<h5 style={{ margin: '20px', marginBottom: '30px' }}> Below are my social media account</h5>
+							<h5 style={{ margin: '20px', marginBottom: '30px' }}>
+								{' '}
+								Below are my social media accounts
+							</h5>
 							<br />
 							<div style={{ display: 'flex', justifyContent: 'space-evenly', marginBottom: '50px' }}>
 								<a href="https://twitter.com/PrabhKaur770" target="_blank" rel="noopener noreferrer">
