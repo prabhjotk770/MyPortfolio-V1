@@ -6,6 +6,7 @@ import amazon_img from '../../../assets/amazon_bg.png';
 import weather_img from '../../../assets/weather_bg.png';
 import friendship_img from '../../../assets/friendship_bg.png';
 import Calendar_img from '../../../assets/calendar.png';
+import shopping_img from '../../../assets/shopping.png';
 
 function Project1() {
 	return (
@@ -17,6 +18,16 @@ function Project1() {
 
 			<div className="project_column">
 				<div className="project_row">
+					<div className="project_box">
+						<ProjectDesc
+							image={shopping_img}
+							language="ReactJs, Javascript, CSS, HTML, Redux, Firebase"
+							desc="A simple shopping app with integrated features like, filter products, add to cart, authentication etc."
+							title="Shopping App"
+							siteLink="https://shopping-appp.netlify.app/"
+						/>
+					</div>
+
 					<div className="project_box">
 						<ProjectDesc
 							image={Calendar_img}
@@ -37,16 +48,6 @@ function Project1() {
 							siteLink="https://prabhjotkaur-netflix-clone.netlify.app/"
 						/>
 					</div>
-
-					<div className="project_box">
-						<ProjectDesc
-							image={amazon_img}
-							language="ReactJs, Javascript, Firebase, React Context API, CSS, HTML"
-							desc="It's a demo Amazon web app. User authorization and add to cart features integrated."
-							title="Amazon Clone"
-							siteLink="https://prabhjotkaur-ecommerce-clone.netlify.app/"
-						/>
-					</div>
 				</div>
 				<div className="project_row">
 					<div className="project_box">
@@ -57,6 +58,16 @@ function Project1() {
               conditions of different places in the world."
 							title="Weather Forecast App"
 							siteLink="https://prabhjotweatherapp.netlify.app/"
+						/>
+					</div>
+
+					<div className="project_box">
+						<ProjectDesc
+							image={amazon_img}
+							language="ReactJs, Javascript, Firebase, React Context API, CSS, HTML"
+							desc="It's a demo Amazon web app. User authorization and add to cart features integrated."
+							title="Amazon Clone"
+							siteLink="https://prabhjotkaur-ecommerce-clone.netlify.app/"
 						/>
 					</div>
 
