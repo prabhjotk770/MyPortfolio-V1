@@ -1,11 +1,7 @@
 import React from "react";
-
-import { MDBRow, MDBCol } from "mdbreact";
-
 import { makeStyles } from "@material-ui/core/styles";
 import { green, pink } from "@material-ui/core/colors";
 import Avatar from "@material-ui/core/Avatar";
-
 import TwitterIcon from "@material-ui/icons/Twitter";
 import EmailIcon from "@material-ui/icons/Email";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";

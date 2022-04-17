@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 import { Fade } from "react-reveal";
-
-import { MDBRow, MDBCol } from "mdbreact";
-
 import "./About.css";
 import AboutIcon from "./AboutIcon";
 const About = () => {
