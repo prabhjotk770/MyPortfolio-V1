@@ -1,35 +1,21 @@
-.project1 {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-bottom: 140px;
-}
-
 .project_heading {
-	color: #444649;
-	padding: 2em;
-	font-size: large;
-	font-weight: 800;
+  color: #444649;
+  font-size: large;
+  font-weight: 800;
 }
-
-.project_column {
-	display: flex;
-	flex-direction: column;
-}
-
 .project_row {
-	display: flex;
-	flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .project_box {
-	width: 100%;
-	height: 100%;
-	margin: 7px;
+  width: 100%;
+  height: 100%;
+  margin: 7px;
 }
 
 @media only screen and (max-width: 450px) {
-	.project_row {
-		display: block;
-	}
+  .project_row {
+    flex-direction: column;
+  }
 }
