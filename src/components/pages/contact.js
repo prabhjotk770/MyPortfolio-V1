@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
   },
   pink: {
     color: theme.palette.getContrastText(pink[500]),
-    backgroundColor: pink[500],
+    backgroundColor: "#feadb9",
   },
   green: {
     color: "#fff",
@@ -99,7 +99,7 @@ const Contact = () => {
                 type="submit"
                 class="btn btn-primary"
                 value="send"
-                style={{ backgroundColor: "#FF1F5A", borderColor: "#FF1F5A" }}
+                className="button-three"
               >
                 Submit
               </button>
