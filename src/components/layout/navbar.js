@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <div style={{ position: "sticky", top: "0", zIndex: 100, width: "100%" }}>
+    <div className="nav-sticky">
       <nav
         class="navbar navbar-expand-lg navbar-dark"
         style={{

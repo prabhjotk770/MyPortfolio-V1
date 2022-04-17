@@ -4,7 +4,12 @@
 }
 
 /* HOME */
-
+.nav-sticky {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
 .imagewrapper {
   flex: 1;
   display: flex;
