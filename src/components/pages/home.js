@@ -22,7 +22,11 @@ const Home = () => {
         <div className="content-wrapper">
           <div className="container homeContentContainer">
             <div className="hometitle">
-              <h1 className="title_h1" contenteditable data-heading="Frozen">
+              <h1
+                className="title_h1 mt-sm-5"
+                contenteditable
+                data-heading="Frozen"
+              >
                 Hey, My name is Prabhjot Kaur
               </h1>
 
