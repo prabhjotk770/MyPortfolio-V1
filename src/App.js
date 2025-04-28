@@ -6,6 +6,7 @@ import Project from "./components/pages/projects/Project1";
 import Contact from "./components/pages/contact";
 import Footer from "./components/layout/footer";
 import About from "./components/pages/About";
+import Certificates from "./components/pages/certificates";
 import { Element } from "react-scroll";
 
 const App = () => {
@@ -18,6 +19,10 @@ const App = () => {
 
       <Element name="about">
         <About />
+      </Element>
+
+      <Element name="certificates">
+        <Certificates />
       </Element>
 
       <Element name="projects">

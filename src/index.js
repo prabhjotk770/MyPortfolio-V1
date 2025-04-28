@@ -1,14 +1,18 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import './styles.css';
 //import "font-awesome/css/font-awesome.min.css";
+import { ThemeProvider } from './context/ThemeContext';
 
 import App from './App';
 
-const rootElement = document.getElementById('root');
-ReactDOM.render(
+const container = document.getElementById('root');
+const root = createRoot(container);
+
+root.render(
 	<React.StrictMode>
-		<App />
-	</React.StrictMode>,
-	rootElement
+		<ThemeProvider>
+			<App />
+		</ThemeProvider>
+	</React.StrictMode>
 );
